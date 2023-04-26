@@ -1,22 +1,17 @@
 const express = require('express')
-const mongoose = require('mongoose')
-const authRouter = require('./authRouter')
-const PORT = process.env.PORT || 5000
+const userRouter = require('./routes/user.router')
+const companyRouter = require('./routes/company.routes')
+const PORT = process.env.PORT || 8080
+
 
 const app = express()
 
+// app.get('/' ,(req, res) => {
+//     res.send("pablo")
+// })
 app.use(express.json())
-app.use('/auth', authRouter)
+app.use('/api', userRouter)
+app.use('/api', companyRouter)
 
-const start = async () => {
-    try{
-        mongoose.set("strictQuery", false);
-        await mongoose.connect(`mongodb+srv://andy:133703@cluster0.uhdel5h.mongodb.net/?retryWrites=true&w=majority`)
-        app.listen(PORT, () => {
-            console.log("Сервер начал свою работу. порт: localhost:", PORT)
-        })
-    }catch (e){
-        console.log("ошибка стоп 00000 \n", e)
-    }
-}
-start()
+app.listen(PORT, () => console.log("░░▄███████▀▀▀▀▀▀███████▄\n░▐████▀▒ЗАПУСКАЕМ▒▀██████▄ \n░███▀▒▒▒▒▒ДЯДЮ▒▒▒▒▒▒▀█████\n░▐██▒▒▒▒▒▒Сервака▒▒▒▒▒████▌ \n░▐█▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████▌ \n░░█▒▄▀▀▀▀▀▄▒▒▄▀▀▀▀▀▄▒▐███▌ \n░░░▐░░░▄▄░░▌▐░░░▄▄░░▌▐███▌\n░▄▀▌░░░▀▀░░▌▐░░░▀▀░░▌▒▀▒█▌ \n░▌▒▀▄░░░░▄▀▒▒▀▄░░░▄▀▒▒▄▀▒▌ \n░▀▄▐▒▀▀▀▀▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒█ \n░░░▀▌▒▄██▄▄▄▄████▄▒▒▒▒█▀ \n░░░░▄██████████████▒▒▐▌\n░░░▀███▀▀████▀█████▀▒▌ \n░░░░░▌▒▒▒▄▒▒▒▄▒▒▒▒▒▒▐ \n░░░░░▌▒▒▒▒▀▀▀▒▒▒▒▒▒▒▐\n\nВаш сервер работает на порту", PORT))
+
