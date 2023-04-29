@@ -3,7 +3,8 @@ const db = require('./db')
 class CompanyController {
     async getCompanies(req, res){
         const users = await db.query(`select * from company`)
-        res.json(users.rows)
+
+        res.json(users)
     }
     async getCompany(req, res){
         const id = req.params.id

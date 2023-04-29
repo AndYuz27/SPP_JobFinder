@@ -1,9 +1,7 @@
 body{
   background-color: #fff;
 }
-.App {
-  text-align: center;
-}
+
 .hdr_main{
   height: 64px;
   background-color: aqua;
@@ -13,8 +11,24 @@ body{
   align-items: center;
   padding: 0 48px 0 48px;
 }
+.card_comp{
+  width: 382px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  box-shadow: 5px 3px 15px gray;
+  transition: 0.5s;
+}
+.card_comp:hover{
+  background-color: lightblue;
+  box-shadow: 5px 3px 15px rgb(180, 180, 180);
 
-
+}
+.jjhh{
+  padding: 20px;
+}
 a{
   text-decoration: none;
   margin: 15px;

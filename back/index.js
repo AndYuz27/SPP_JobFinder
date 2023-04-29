@@ -1,11 +1,12 @@
 const express = require('express')
+var cors = require('cors')
 const userRouter = require('./routes/user.router')
 const companyRouter = require('./routes/company.routes')
 const PORT = process.env.PORT || 8080
 
 
 const app = express()
-
+app.use(cors())
 // app.get('/' ,(req, res) => {
 //     res.send("pablo")
 // })
