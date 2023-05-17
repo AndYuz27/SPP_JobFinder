@@ -29,6 +29,7 @@ create table finders(
     phone VARCHAR(512),
     email VARCHAR(512),
     position_id INTEGER not null,
+    image_pers VARCHAR,
     FOREIGN KEY (position_id) REFERENCES j_Position (id)
 );
 create table education(
@@ -51,7 +52,8 @@ create table company(
     vakansii VARCHAR(255) not null,
     contacts__comp VARCHAR(255) not null,
     company_info VARCHAR(255) not null,
-    rathing VARCHAR(10) not null
+    rathing VARCHAR(10) not null,
+    
 
 );
 --

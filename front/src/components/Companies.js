@@ -7,7 +7,7 @@ import Card from './Card'
 
 
 
-export default function Compaines(){
+export default function Companies(){
 
     const [comps, setProds] = useState([]);
     useEffect(() => {
