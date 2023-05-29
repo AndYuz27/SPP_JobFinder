@@ -18,4 +18,11 @@ export const getCompany = async (id) => {
     //     console.log("ERROR")
     // }
 }
+export const getVacs = async () => {
+        const res = await axios.get(`http://127.0.0.1:8080/api/vacancy/`)
+
+        return res.data.rows;
+
+}
+
 

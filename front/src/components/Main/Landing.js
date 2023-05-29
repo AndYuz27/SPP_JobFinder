@@ -21,7 +21,7 @@ export default function Landing() {
                 <div className="ctr_text">
             <h2>Начните ваш день с JobFinder</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis neque autem explicabo fugit, tempora harum molestiae soluta dolorem enim tenetur obcaecati consectetur et facilis eaque repellendus accusantium sequi asperiores provident.</p>
-                <Link to="/companies" style={{fontSize: "24pt"}}>Найти работу</Link>
+                <Link className='hdr_button' to="/companies" style={{fontSize: "16pt"}}>Найти работу</Link>
 </div>
             </div>
         </div>

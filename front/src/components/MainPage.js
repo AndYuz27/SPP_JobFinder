@@ -1,6 +1,7 @@
 import "../App.css"
 import '../styles/Main.css'
 import Landing from './Main/Landing'
+import Part1 from "./Main/Part1"
 export default function MainPage() {
     return(
         <div className="main_page">
@@ -12,7 +13,8 @@ export default function MainPage() {
                    <img src="https://cdn.dribbble.com/users/2317423/screenshots/14574446/job_seeker_by_robikucluk_4x.jpg" alt="" style={{width: "320px"}}></img> 
                 </div>
             </div> */}
-            <Landing></Landing>
+            <Landing/>
+            <Part1/>
         </div>
     )
 }

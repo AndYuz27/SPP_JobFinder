@@ -53,6 +53,7 @@ create table company(
     contacts__comp VARCHAR(255) not null,
     company_info VARCHAR(255) not null,
     rathing VARCHAR(10) not null,
+    image_company VARCHAR DEFAULT "https://extrasvyaz.ru/upload/iblock/867/ed2hp485p3dtmzqj8biva59uuforqqjj.jpg",
     
 
 );
