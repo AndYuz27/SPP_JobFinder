@@ -1,5 +1,5 @@
 var pg = require('pg');
-var client = new pg.Client("postgres:/.elephantsql.com:The Actual url");
+var client = new pg.Client("postgres://wkpygcwh:5yQvm_AeNHPnMix7VT1XGSAfIQpqr6Q7@motty.db.elephantsql.com/wkpygcwh");
 
 client.connect(function(err) {
   if(err) {

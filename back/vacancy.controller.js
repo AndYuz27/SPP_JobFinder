@@ -1,4 +1,4 @@
-const db = require('./db')
+const db = require('./el_sql');
 
 class VacancyController {
     // async createUser(req, res){

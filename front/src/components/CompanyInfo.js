@@ -4,6 +4,8 @@ import { getCompany } from "../api.js";
 import axios from "axios";
 import Card from "./Card.js";
 import '../styles/Companies.css'
+import ReactStars from "react-rating-stars-component";
+
 
 
 export default function CompanyInfo(){
@@ -60,6 +62,15 @@ export default function CompanyInfo(){
 
                 <h3>Контакты:</h3>
                 <p>{el.contacts__comp}</p>
+                <ReactStars
+                edit={false}
+                isHalf={false}
+                
+    count={5}
+    value={el.rathing}
+    size={48}
+    activeColor="#ffd700"
+  />
         
             </div>
                         </div>})}

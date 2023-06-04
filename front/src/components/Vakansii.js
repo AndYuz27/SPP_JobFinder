@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getVacs } from "../api"
-
+import '../styles/Main.css'
 
 export default function Vakansii() {
 
@@ -17,7 +17,7 @@ export default function Vakansii() {
 
     return(
         <div className="main_page">
-            {vacs.map((e) => {return <div className="vacancy" key={e.id}>
+            {vacs.map((e) => {return <div className="vacancy_ppp" key={e.id}>
                                 <h3>{e.name_vacancy}</h3>
                                 <p>Заработная плата: {e.salary} руб.</p>
                                 <p>Режим работы {e.shedule_vacancy}</p>
