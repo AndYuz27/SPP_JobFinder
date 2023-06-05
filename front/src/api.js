@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const getComps = async () => {
     // try {
-        const res = await axios.get(`http://127.0.0.1:8080/api/company`)
+        const res = await axios.get(`https://sppjfapi.andrieiiuzlov.repl.co/api/company`)
 
         return res.data.rows;
     // } catch (e) {
@@ -11,7 +11,7 @@ export const getComps = async () => {
 }
 export const getCompany = async (id) => {
     // try {
-        const res = await axios.get(`http://127.0.0.1:8080/api/company/${id}`)
+        const res = await axios.get(`https://sppjfapi.andrieiiuzlov.repl.co/api/company/${id}`)
 
         return res.data.rows;
     // } catch (e) {
@@ -19,7 +19,7 @@ export const getCompany = async (id) => {
     // }
 }
 export const getVacs = async () => {
-        const res = await axios.get(`http://127.0.0.1:8080/api/vacancy/`)
+        const res = await axios.get(`https://sppjfapi.andrieiiuzlov.repl.co/api/vacancy/`)
 
         return res.data.rows;
 

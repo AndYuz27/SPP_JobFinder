@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 
 import { getComps } from "../api"
 import Card from './Card'
+import '../App.css'
 
 
 
@@ -19,9 +20,9 @@ export default function Companies(){
         setNewCards();
     }, []);
     return(
-        <div>
+        <div className='comp_page'>
             <div className='jjhh'>Вот что найдено</div>
-            <div>
+            <div className='hhj'>
             {comps.map((el, index) => {return <Card key={index} comp={el}/>})}
 
             </div>

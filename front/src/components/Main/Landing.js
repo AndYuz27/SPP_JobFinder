@@ -1,5 +1,6 @@
 import '../../styles/Main.css'
 import {Link} from 'react-router-dom'
+import art_job from '../../Assets/landing.jpg'
 
 export default function Landing() {
 
@@ -16,7 +17,7 @@ export default function Landing() {
 
     return(
         <div className="Landing">
-            <div className="lnd_img"><p style={{fontSize: "8pt"}}><a href="https://ru.freepik.com/free-photo/portrait-of-young-japanese-business-woman-corporate-lady-in-suit-pointing-on-wall-with-chart-showing-diagram-or-advertisement-on-empty-copy-space-pink-background_23957202.htm#page=3&query=work&position=2&from_view=search&track=sph">Изображение от benzoix</a> на Freepik</p></div>
+            <div className="lnd_img" style={{backgroundImage: `url(${art_job})`}}><p style={{fontSize: "8pt"}}><a href="https://www.freepik.com/free-vector/good-team-concept-illustration_11119934.htm#query=job&position=31&from_view=search&track=sph">Image by storyset</a> on Freepik</p></div>
             <div className="lnd_info">
                 <div className="ctr_text">
             <h2>Начните ваш день с JobFinder</h2>

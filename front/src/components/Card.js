@@ -11,7 +11,7 @@ console.log(img)
                         <p>Рейтинг: <b>{fn.comp.rathing}/10 </b></p>
 
                     </div>
-                    <img src={img} style={{width: "250px",  borderRadius: "15px"}}></img>
+                    <div className="img_comp"  style={{backgroundImage: `url(${img})`, borderRadius: "15px"}}></div>
 
                 </div>
     )

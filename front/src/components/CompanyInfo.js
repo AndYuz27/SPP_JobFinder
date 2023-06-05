@@ -17,7 +17,7 @@ export default function CompanyInfo(){
     // console.log(id)
     useEffect(() => {
         if ( id ) {
-            axios.get(`http://127.0.0.1:8080/api/company/${id}`)
+            axios.get(`https://sppjfapi.andrieiiuzlov.repl.co/api/company/${id}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setTour(res.data.rows)
@@ -35,8 +35,7 @@ export default function CompanyInfo(){
         if ( id_comp ) {
             
             console.log(id_comp)
-            console.log(`http://127.0.0.1:8080/api/vacancy/${id_comp}`)
-            axios.get(`http://127.0.0.1:8080/api/vacancy/${id_comp}`)
+            axios.get(`https://sppjfapi.andrieiiuzlov.repl.co/api/vacancy/${id_comp}`)
                 .then(res => {
                     console.log(res.data.rows)
                     setVacs(res.data.rows)

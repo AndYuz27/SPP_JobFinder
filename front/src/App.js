@@ -7,6 +7,7 @@ import NotFound from "./NotFound";
 import AdminMain from "./components/Admin_part/AdminMain";
 import CompanyInfo from "./components/CompanyInfo";
 import {useEffect ,useState} from 'react'
+import AddCompany from './components/Admin_part/AddCompany'
 import axios from "axios";
 import './styles/Mobile_adapt/header.css'
 
@@ -45,14 +46,19 @@ return (
   </nav>
 </header>
 <main>
-      <Routes>
+  <div className="aa">
+          <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/vakansii" element={<Vakansii />} />
         <Route path="/companies" element={<Companies />} />
+        <Route path="/admin/add-company" element={<AddCompany />} />
+
         {/* <Route path="/admin" element={<AdminMain />} /> */}
         <Route path="/companies/:id" element={<CompanyInfo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+  </div>
+
 
 </main>
 
